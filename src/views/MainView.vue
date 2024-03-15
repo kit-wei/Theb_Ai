@@ -5,13 +5,14 @@ import MainComponent from '@/components/MainComponent.vue'
 </script>
 
 <template>
-  <div class="flex w-full h-[100vh] flex-col">
-    <Header></Header>
-    <main class="flex-1">
-      <RouterView />
-    </main>
+  <div class="parent-box">
+    <MainComponent></MainComponent>
   </div>
 </template>
 
 <style scoped lang="less">
+.parent-box{
+  width: 100%;
+  height: 100%;
+}
 </style>

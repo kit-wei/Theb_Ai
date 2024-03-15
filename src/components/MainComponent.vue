@@ -1,11 +1,12 @@
 <template>
     <div class="box flex">
         <div class="left">
-            <LeftComponent></LeftComponent>
+            <LeftComponent @changeTab="changeTab"></LeftComponent>
         </div>
         <div class="center flex">
             <div class="flex-1">
-                <CenterComponent></CenterComponent>
+                <ChatContent v-if="tabIndex === 1"></ChatContent>
+                <ImageContent v-if="tabIndex === 2"></ImageContent>
             </div>
             <div>
                 <RightComponent></RightComponent>
@@ -14,9 +15,15 @@
     </div>
 </template>
 <script setup lang="ts">
+import {ref} from 'vue'
 import LeftComponent from './LeftComponent.vue';
 import RightComponent from './RightComponent.vue';
-import CenterComponent from './CenterComponent.vue';
+import ChatContent from './content/ChatContent.vue';
+import ImageContent from './content/ImageContent.vue';
+const tabIndex = ref(1)
+const changeTab = function(v:number){
+    tabIndex.value = v;
+}
 </script>
 <style lang="less" scoped>
 .box{
