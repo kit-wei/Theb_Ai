@@ -39,6 +39,15 @@ html:not(.dark) {
   --color-text: var(--vt-c-text-light-1);
   --section-gap: 160px;
   --color-bg-right:var(--vt-c-right);
+  --color-ask-bg:#fff;
+  --color-ask-border:rgb(243 245 247);
+  --color-answer-bg:rgb(243 245 247);
+  --text-center-color:#333333;
+  --history-bg:rgba(232,236,239,.75);
+  --image-btn-bg-color:#000;
+  --image-btn-text-color:#fff;
+  --scrollbar-bg:#fff;
+  --scrollbar-thumb:rgba(144,147,153,0.5);
 }
 
 html.dark{
@@ -51,6 +60,16 @@ html.dark{
 
   --color-heading: var(--vt-c-text-dark-1);
   --color-text: var(--vt-c-text-dark-2);
+  --color-ask-bg:rgba(52,56,57,.5);
+  --color-ask-border:transparent;
+  --color-answer-bg:rgba(20,23,24,.5);
+  --text-center-color:#fefefe;
+  --history-bg:rgb(52 56 57);
+  --history-text-color:#fefefe;
+  --image-btn-bg-color:#fff;
+  --image-btn-text-color:#333;
+  --scrollbar-bg:var(--vt-c-black);
+  --scrollbar-thumb:rgba(255,255,255,0.5);
 }
 
 *,
